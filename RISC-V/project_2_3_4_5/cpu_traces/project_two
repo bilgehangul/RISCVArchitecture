@@ -1,0 +1,19 @@
+add x10, x10, x25
+sub x8, x8, x11
+ld x9, 0(x10)
+addi x22, x22, 1
+slli x11, x22, 3
+bne x8, x24, -16
+
+/*
+Regfiles
+x8: 0
+x9: 128
+x10: 8
+x11: 24
+x22: 3
+x24: 0
+x25: 4
+
+Data Memory Remains unchanged
+*/
